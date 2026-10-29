@@ -9,7 +9,7 @@ def test_owner_within_24h():
 
 def test_stranger_denied():
     now = datetime.now(UTC)
-    assert  can_cancel("NEW", 1, 2, False, now, now) #assert not
+    assert not can_cancel("NEW", 1, 2, False, now, now) #assert not
 
 #Admin borra el pedido de alguien mas
 def test_admin_approved(): 
